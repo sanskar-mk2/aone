@@ -7,11 +7,14 @@
         content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
+    <title>
+        {{ config('app.name') }}
+    </title>
 </head>
 
 <body x-data="{ open: false }">
     <h1 class="text-3xl font-bold underline">
-        AOne
+        {{ config('app.name') }}
     </h1>
 </body>
 
