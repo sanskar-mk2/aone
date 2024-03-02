@@ -17,9 +17,10 @@
     <header class="">
         <nav
             class="w-full p-4 px-8 flex items-center justify-between flex-wrap bg-slate-200">
-            <div class="flex items-center">
+            <a class="flex items-center group"
+                href="/">
                 <img src="{{ Vite::asset('/resources/svgs/logo.svg') }}"
-                    class=" w-12 mr-2"
+                    class=" w-12 mr-2 group-hover:animate-spin"
                     alt="Logo">
                 <h1 class="text-lg font-bold ml-1 md:hidden">
                     Aone
@@ -27,7 +28,7 @@
                 <h1 class="text-xl font-bold hidden md:block">
                     {{ config('app.name') }}
                 </h1>
-            </div>
+            </a>
             <div class="">
                 <label class="btn btn-circle swap swap-rotate bg-slate-200">
                     <!-- this hidden checkbox controls the state -->
