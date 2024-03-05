@@ -13,10 +13,10 @@
     </title>
 </head>
 
-<body class="">
-    <header class="">
+<body class="relative">
+    <header class="lg:absolute lg:w-full lg:mt-8 lg:z-10 lg:flex lg:justify-center">
         <nav
-            class="w-full p-4 px-8 flex items-center justify-between flex-wrap bg-slate-200">
+            class="w-full p-4 px-8 flex items-center justify-between flex-wrap bg-slate-200 lg:absolute lg:w-10/12 lg:z-10 lg:rounded-xl">
             <a class="flex items-center group"
                 href="/">
                 <img src="{{ Vite::asset('/resources/svgs/logo.svg') }}"
@@ -29,7 +29,7 @@
                     {{ config('app.name') }}
                 </h1>
             </a>
-            <div class="">
+            <div class="lg:hidden">
                 <label class="btn btn-circle swap swap-rotate bg-slate-200">
                     <!-- this hidden checkbox controls the state -->
                     <input type="checkbox"
@@ -57,7 +57,7 @@
                 </label>
             </div>
             <ul id="menuExpand"
-                class="hidden basis-full mt-8">
+                class="hidden basis-full mt-8 lg:flex lg:basis-0 lg:w-full">
                 <li class="pt-4"><a href=""
                         class="hover:text-sky-700 transition-all">Home</a></li>
                 <li class="pt-4"><a href=""
@@ -150,30 +150,30 @@
                         <x-transportation />
                     </x-service-card>
 
-                    <x-service-card
-                        image="{{ Vite::asset('resources/images/house.svg') }}"
-                        title="Accommodation Support"
-                        description="Finding the right accommodation can be overwhelming for seniors and their families. Our team can help navigate the process, whether it's finding suitable housing options or assisting with the transition to a new living arrangement." />
+                    <x-service-card title="Accommodation Support"
+                        description="Finding the right accommodation can be overwhelming for seniors and their families. Our team can help navigate the process, whether it's finding suitable housing options or assisting with the transition to a new living arrangement.">
+                        <x-house />
+                    </x-service-card>
 
-                    <x-service-card
-                        image="{{ Vite::asset('resources/images/care.svg') }}"
-                        title="In-Home Care"
-                        description="Our trained caregivers offer personalized in-home care services to support seniors with daily activities such as bathing, dressing, meal preparation, medication reminders, and more. We provide the assistance seniors need to maintain their independence and quality of life in the comfort of their own homes." />
+                    <x-service-card title="In-Home Care"
+                        description="Our trained caregivers offer personalized in-home care services to support seniors with daily activities such as bathing, dressing, meal preparation, medication reminders, and more. We provide the assistance seniors need to maintain their independence and quality of life in the comfort of their own homes.">
+                        <x-care />
+                    </x-service-card>
 
-                    <x-service-card
-                        image="{{ Vite::asset('resources/images/support.svg') }}"
-                        title="Support Coordination"
-                        description="Navigating the complex landscape of senior services and resources can be daunting. Our experienced support coordinators work closely with seniors and their families to identify needs, develop personalized care plans, and connect them with the right community resources and support networks." />
+                    <x-service-card title="Support Coordination"
+                        description="Navigating the complex landscape of senior services and resources can be daunting. Our experienced support coordinators work closely with seniors and their families to identify needs, develop personalized care plans, and connect them with the right community resources and support networks.">
+                        <x-support />
+                    </x-service-card>
 
-                    <x-service-card
-                        image="{{ Vite::asset('resources/images/task.svg') }}"
-                        title="Daily Tasks Assistance"
-                        description="From light housekeeping and laundry to grocery shopping and meal planning, we're here to lend a helping hand with everyday tasks. Our goal is to alleviate the stress of household chores so seniors can focus on what matters most – enjoying life to the fullest." />
+                    <x-service-card title="Daily Tasks Assistance"
+                        description="From light housekeeping and laundry to grocery shopping and meal planning, we're here to lend a helping hand with everyday tasks. Our goal is to alleviate the stress of household chores so seniors can focus on what matters most – enjoying life to the fullest.">
+                        <x-task />
+                    </x-service-card>
 
-                    <x-service-card
-                        image="{{ Vite::asset('resources/images/social.svg') }}"
-                        title="Social Engagement Programs"
-                        description="Maintaining social connections and participating in engaging activities is essential for seniors' overall well-being. Our social engagement programs offer a variety of recreational, educational, and cultural activities tailored to seniors' interests and abilities. Whether it's group outings, arts and crafts workshops, book clubs, or fitness classes." />
+                    <x-service-card title="Social Engagement Programs"
+                        description="Maintaining social connections and participating in engaging activities is essential for seniors' overall well-being. Our social engagement programs offer a variety of recreational, educational, and cultural activities tailored to seniors' interests and abilities. Whether it's group outings, arts and crafts workshops, book clubs, or fitness classes.">
+                        <x-social />
+                    </x-service-card>
                 </div>
             </div>
         </section>
