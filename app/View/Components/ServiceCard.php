@@ -9,14 +9,13 @@ use Illuminate\View\Component;
 class ServiceCard extends Component
 {
     public $title;
-    public $description;
-    public $image;
 
-    public function __construct($title, $description, $image)
+    public $description;
+
+    public function __construct($title, $description)
     {
         $this->title = $title;
         $this->description = $description;
-        $this->image = $image;
     }
 
     /**

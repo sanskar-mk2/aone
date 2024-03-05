@@ -1,9 +1,7 @@
 <div
-    class="bg-white p-8 flex flex-col justify-center items-center gap-8 rounded-md hover:bg-sky-700 hover:text-white transition-all ">
+    class="group bg-white p-8 flex flex-col justify-center items-center gap-8 rounded-md hover:bg-sky-700 hover:text-white transition-all ">
     <div class="flex flex-col justify-center items-center">
-        <img src="{{ $image }}"
-            class="w-20"
-            alt="">
+        {{ $slot }}
         <div class="border-t-4 border-slate-200 h-0 w-4/5 mx-4">
         </div>
     </div>

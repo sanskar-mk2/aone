@@ -145,10 +145,10 @@
                 </article>
                 <div
                     class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3">
-                    <x-service-card
-                        image="{{ Vite::asset('resources/images/transportation.svg') }}"
-                        title="Transportation Assistance"
-                        description="We provide safe and reliable transportation services to help seniors get to appointments, social outings, and errands with ease. Whether it's a leisurely stroll in the park or a trip to the grocery store, our friendly drivers are here to assist." />
+                    <x-service-card title="Transportation Assistance"
+                        description="We provide safe and reliable transportation services to help seniors get to appointments, social outings, and errands with ease. Whether it's a leisurely stroll in the park or a trip to the grocery store, our friendly drivers are here to assist.">
+                        <x-transportation />
+                    </x-service-card>
 
                     <x-service-card
                         image="{{ Vite::asset('resources/images/house.svg') }}"
