@@ -13,7 +13,11 @@
     </title>
 </head>
 
-<body class="relative">
+<body class="relative"
+    :class="{
+        'overflow-hidden': is_modal_open
+    }"
+    x-data="{ is_modal_open: false }">
     <header
         class="lg:absolute lg:w-full lg:mt-8 lg:z-10 lg:flex lg:justify-center">
         <nav
@@ -78,11 +82,10 @@
                 <li class="lg:w-full"><a href="#Testmonials"
                         class="hover:text-sky-700 transition-all">Testimonials</a>
                 </li>
-                <li
-                    class="py-2 lg:mt-0 px-5 mt-2  bg-sky-700 rounded-md w-full text-white">
-                    <a href="#appointmentForm"
-                        class="transition-all whitespace-nowrap">Book an
-                        Appointment</a>
+                <li x-on:click="is_modal_open = true"
+                    class="py-2 lg:mt-0 px-5 mt-2 cursor-pointer bg-sky-700 rounded-md w-full text-white">
+                    <span class="transition-all whitespace-nowrap">Book an
+                        Appointment</span>
                 </li>
             </ul>
         </nav>
@@ -130,27 +133,39 @@
                         fulfilling lifestyle.</p>
                     <div class="flex flex-col gap-8">
                         <div class="flex items-center gap-3">
-                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-sky-700"><x-checkmark />
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-sky-700">
+                                <x-checkmark />
                             </div>
-                            <span class="md:text-lg font-bold">Qualified Staff</span>
+                            <span class="md:text-lg font-bold">Qualified
+                                Staff</span>
                         </div>
 
                         <div class="flex items-center gap-3">
-                            <div class="flex items-center justify-center p-2 h-12 w-12 rounded-full bg-sky-700"><x-checkmark />
+                            <div
+                                class="flex items-center justify-center p-2 h-12 w-12 rounded-full bg-sky-700">
+                                <x-checkmark />
                             </div>
-                            <span class="md:text-lg font-bold">Personalized Care Plans</span>
+                            <span class="md:text-lg font-bold">Personalized Care
+                                Plans</span>
                         </div>
 
                         <div class="flex items-center gap-3">
-                            <div class="flex items-center justify-center p-2 h-12 w-12 rounded-full bg-sky-700"><x-checkmark />
+                            <div
+                                class="flex items-center justify-center p-2 h-12 w-12 rounded-full bg-sky-700">
+                                <x-checkmark />
                             </div>
-                            <span class="md:text-lg font-bold">24/7 Availability</span>
+                            <span class="md:text-lg font-bold">24/7
+                                Availability</span>
                         </div>
 
                         <div class="flex items-center gap-3">
-                            <div class="flex items-center justify-center p-2 h-12 w-12 rounded-full bg-sky-700"><x-checkmark />
+                            <div
+                                class="flex items-center justify-center p-2 h-12 w-12 rounded-full bg-sky-700">
+                                <x-checkmark />
                             </div>
-                            <span class="md:text-lg font-bold">Flexible Options</span>
+                            <span class="md:text-lg font-bold">Flexible
+                                Options</span>
                         </div>
                     </div>
                 </article>
