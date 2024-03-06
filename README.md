@@ -1,11 +1,5 @@
 - Slideshow with changing content
-
-- About Us Improvement
-
- - Book an Appointment Modal
-
-- Service Improvement
-
+- Book an Appointment Modal (wip)
 - Testimonial
-
-- Contact Us, Embed Google Map, Put address, phone number etc
+- Contact Us => Embed Google Map, Put address, phone number etc
+- Backend (last)
