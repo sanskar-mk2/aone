@@ -64,18 +64,18 @@
                 <li class="lg:w-full"><a href=""
                         class="lg:w-full hover:text-sky-700 transition-all">Home</a>
                 </li>
-                <li class="lg:w-full"><a href=""
+                <li class="lg:w-full"><a href="#aboutUs"
                         class="lg:w-full whitespace-nowrap hover:text-sky-700 transition-all">About
                         Us</a>
                 </li>
-                <li class="lg:w-full"><a href=""
+                <li class="lg:w-full"><a href="#servicesWeOffer"
                         class="hover:text-sky-700 transition-all">Services</a>
                 </li>
                 <li class="lg:w-full"><a href=""
                         class="hover:text-sky-700 whitespace-nowrap transition-all">Contact
                         Us</a>
                 </li>
-                <li class="lg:w-full"><a href=""
+                <li class="lg:w-full"><a href="#Testmonials"
                         class="hover:text-sky-700 transition-all">Testimonials</a>
                 </li>
                 <li
@@ -114,8 +114,8 @@
         <section id="aboutUs"
             class="max-w-screen-xl min-w-[300px] py-20 flex justify-center px-8">
             <div
-                class="flex flex-col items-center max-w-[450px] md:flex-row md:max-w-screen-md xl:max-w-screen-xl">
-                <article class="md:w-3/5 mr-20">
+                class="flex flex-col items-center gap-8 md:flex-row-reverse md:max-w-screen-lg lg:max-w-screen-lg">
+                <article class="md:w-3/5 md:ml-20">
                     <h2 class="text-3xl font-bold mb-5 md:text-4xl">About Us
                     </h2>
                     <p class="text-base text-gray-500 mb-10 md:text-lg">We
@@ -128,6 +128,31 @@
                         appointments, or companionship, we're here to help
                         seniors maintain their independence and enjoy a
                         fulfilling lifestyle.</p>
+                    <div class="flex flex-col gap-8">
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-sky-700"><x-checkmark />
+                            </div>
+                            <span class="md:text-lg font-bold">Qualified Staff</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center justify-center p-2 h-12 w-12 rounded-full bg-sky-700"><x-checkmark />
+                            </div>
+                            <span class="md:text-lg font-bold">Personalized Care Plans</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center justify-center p-2 h-12 w-12 rounded-full bg-sky-700"><x-checkmark />
+                            </div>
+                            <span class="md:text-lg font-bold">24/7 Availability</span>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center justify-center p-2 h-12 w-12 rounded-full bg-sky-700"><x-checkmark />
+                            </div>
+                            <span class="md:text-lg font-bold">Flexible Options</span>
+                        </div>
+                    </div>
                 </article>
                 <figure class="w-full h-fit md:w-2/5">
                     <img src="{{ Vite::asset('/resources/images/aboutus.jpg') }}"
@@ -185,86 +210,7 @@
             </div>
         </section>
 
-        <section id="appointmentForm"
-            class="max-w-screen-xl min-w-[300px] py-20 flex justify-center">
-            <div class="w-full">
-                <h2 class="text-3xl font-bold mb-8">Book Your Appointment</h2>
-                <form action="">
-                    <div class="">
-                        <div class=" w-full mb-4">
-                            <input type="text"
-                                name=""
-                                id=""
-                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                                placeholder="First Name">
-                        </div>
-
-                        <div class=" w-full mb-4">
-                            <input type="text"
-                                name=""
-                                id=""
-                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                                placeholder="Last Name">
-                        </div>
-                        <div class=" w-full mb-4">
-                            <select name=""
-                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                                id="">
-                                <option value=""
-                                    seleted>Select Your Services</option>
-                                <option value="">Transportation
-                                    Assistance</option>
-                                <option value="">Accommodation Support
-                                </option>
-                                <option value="">In-Home Care</option>
-                                <option value="">Support Coordination
-                                </option>
-                                <option value="">Daily Tasks Assistance
-                                </option>
-                                <option value="">Social Engagement
-                                    Programs</option>
-                            </select>
-                        </div>
-                        <div class=" w-full mb-4">
-                            <input type="text"
-                                name=""
-                                id=""
-                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                                placeholder="Phone">
-                        </div>
-                        <div class=" w-full mb-4">
-                            <input type="date"
-                                name=""
-                                id=""
-                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                                placeholder="Date">
-                        </div>
-                        <div class=" w-full mb-4">
-                            <input type="time"
-                                name=""
-                                id=""
-                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                                placeholder="Time">
-                        </div>
-                        <div class=" w-full mb-4">
-                            <textarea type="text"
-                                name=""
-                                id=""
-                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                                placeholder="Message">
-                            </textarea>
-                        </div>
-                        <div class=" w-full mb-4">
-                            <button type="submit"
-                                name=""
-                                id=""
-                                class="w-full px-4 py-3 bg-sky-700 text-white rounded-md"
-                                placeholder="Message"> Appointment
-                            </button>
-                        </div>
-                </form>
-            </div>
-        </section>
+        <x-appointment />
 
         <section id="Testmonials"
             class="w-full py-20 px-8 flex justify-center bg-slate-200">

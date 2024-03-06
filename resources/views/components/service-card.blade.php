@@ -1,5 +1,5 @@
 <div
-    class="group bg-white p-8 flex flex-col justify-center items-center gap-8 rounded-md hover:bg-sky-700 hover:text-white transition-all ">
+    class="group bg-slate-100 p-8 flex flex-col justify-center items-center gap-8 rounded-md hover:bg-sky-700 hover:text-white transition-all shadow-lg shadow-gray-500/30">
     <div class="flex flex-col justify-center items-center">
         {{ $slot }}
         <div class="border-t-4 border-slate-200 h-0 w-4/5 mx-4">
