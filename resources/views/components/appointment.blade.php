@@ -3,7 +3,16 @@
     x-show="is_modal_open">
     <section id="appointmentForm"
         class="relative max-w-screen-xl bg-base-200 px-20 min-w-[300px] py-20 flex justify-center">
-        <div x-on:click="is_modal_open=false" class="cursor-pointer absolute right-2 top-2">X</div>
+
+        <svg class="swap-on fill-current absolute right-4 top-8 cursor-pointer"
+            x-on:click="is_modal_open=false"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 512 512">
+            <polygon
+                points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+        </svg>
         <div class="w-full">
             <h2 class="text-3xl font-bold mb-8">Book Your Appointment
             </h2>
