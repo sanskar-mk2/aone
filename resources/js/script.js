@@ -1,12 +1,16 @@
-const toggleBtn = document.getElementById("menuToggle");
-const toggleMenu = document.getElementById("menuExpand");
+import "keen-slider/keen-slider.min.css";
+import KeenSlider from "keen-slider";
 
-const openToggleMenu = () => {
-    if (toggleMenu.classList.contains('hidden')) {
-        toggleMenu.classList.remove('hidden');
-    } else {
-        toggleMenu.classList.add('hidden');
-    }
-};
+const testimonial_keen = new KeenSlider("#testimonial-slider", {
+    loop: true,
+    slides: {
+        perView: 1,
+    },
+    breakpoints: {
+        "(min-width: 1280px)": {
+            slides: { perView: 3, spacing: 10 },
+        },
+    },
+});
 
-toggleBtn.addEventListener('click', openToggleMenu);
+window.testimonial_keen = testimonial_keen;
