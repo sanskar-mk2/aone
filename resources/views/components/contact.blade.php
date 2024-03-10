@@ -13,17 +13,20 @@
                         <div class="flex justify-center flex-col">
                             <div class="flex items-center gap-2">
                                 <span><x-location /></span>
-                                <span>203 Fake St. Mountain View, San
-                                    Francisco,
-                                    California, USA</span>
+                                <span>23 Ross Smith Ave, Parap NT 0820,
+                                    Australia
+                                </span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span><x-call /></span>
-                                <span>+2 392 3929 210</span>
+                                <a href="tel:0889445893"
+                                    class="underline">
+                                    0889445893</a>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span><x-email /></span>
-                                <span>info@yourdomain.com</span>
+                                <a class="underline"
+                                    href="mailto:admin@aonesupportservices.com.au">admin@aonesupportservices.com.au</a>
                             </div>
                         </div>
                         <div
@@ -64,8 +67,8 @@
                 <div
                     class="flex justify-center items-center md:w-1/2 w-full h-96 md:h-full">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7967.519440298085!2d101.70672824019988!3d3.1579277498523513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0x9e3afdd17c8a9056!2sPetronas%20Twin%20Towers!5e0!3m2!1sen!2s!4v1709824163380!5m2!1sen!2s"
-                        class="w-[300px] h-[300px] md:w-full md:h-96"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.287392992019!2d130.8463386867604!3d-12.43056214720318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc093d0b7fedf79%3A0xd1e161e7442e6bbd!2s23%20Ross%20Smith%20Ave%2C%20Parap%20NT%200820%2C%20Australia!5e0!3m2!1sen!2sin!4v1710087463090!5m2!1sen!2sin"
+                        class="w-72 h-72 md:w-full md:h-96"
                         style="border:0;"
                         allowfullscreen=""
                         loading="lazy"

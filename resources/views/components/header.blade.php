@@ -1,4 +1,4 @@
-<header x-cloak class="lg:w-full z-50 lg:flex lg:justify-center sticky top-0 shadow bg-white" x-data="{ isMenuOpen: false }">
+<header x-cloak class="lg:h-20 lg:w-full z-50 lg:flex lg:justify-center sticky top-0 shadow bg-white" x-data="{ isMenuOpen: false }">
     <nav class="w-full p-4 px-8 flex flex-col lg:flex-row items-center justify-between flex-nowrap bg-slate-200 lg:z-10">
         <div class="flex justify-between w-full">
             <a class="flex items-center group" href="/">

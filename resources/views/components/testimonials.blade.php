@@ -4,9 +4,11 @@
         class="flex flex-col items-center max-w-md md:max-w-screen-lg lg:max-w-screen-lg ">
         <h1 class="text-4xl font-bold mb-10">Happy Customers</h1>
 
-        <div id="testimonial-slider" x-data
+        <div id="testimonial-slider"
+            x-data
             class="keen-slider max-w-xs lg:max-w-full relative rounded">
-            <div class="keen-slider__slide bg-gray-100 rounded-lg p-6 px-12 shadow-md">
+            <div
+                class="keen-slider__slide bg-gray-100 rounded-lg p-6 px-12 shadow-md">
                 <div class="flex items-center mb-4">
                     <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
                         <img src="{{ Vite::asset('resources/images/testmonial2.jpg') }}"
@@ -89,14 +91,17 @@
                     above
                     and beyond to meet my needs."</p>
             </div>
-            <div class="absolute flex w-32 justify-start pl-4 items-center bg-gradient-to-r from-slate-200/50 to-slate-200/0 left-0 top-0 h-full z-50">
+            <div
+                class="absolute flex w-32 justify-start pl-4 items-center bg-gradient-to-r from-slate-200/50 to-slate-200/0 left-0 top-0 h-full z-40">
                 <p>
                     <x-arrow x-on:click="testimonial_keen.prev();" />
                 </p>
             </div>
-            <div class="absolute flex w-32 justify-end pr-4 bg-gradient-to-l from-slate-200/50 to-slate-200/0 items-center right-0 top-0 h-full z-50">
+            <div
+                class="absolute flex w-32 justify-end pr-4 bg-gradient-to-l from-slate-200/50 to-slate-200/0 items-center right-0 top-0 h-full z-40">
                 <p>
-                    <x-arrow x-on:click="testimonial_keen.next();" class="rotate-180" />
+                    <x-arrow x-on:click="testimonial_keen.next();"
+                        class="rotate-180" />
                 </p>
             </div>
         </div>

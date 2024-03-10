@@ -16,9 +16,11 @@
         'overflow-hidden': is_modal_open
     }"
     x-data="{ is_modal_open: false }">
+    
     <x-header />
 
     <x-hero />
+    
 
     <main class="flex flex-col justify-center items-center">
         <x-about />
