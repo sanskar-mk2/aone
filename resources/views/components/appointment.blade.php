@@ -1,8 +1,8 @@
-<div class="w-screen h-screen fixed bg-black/80 top-0 left-0 z-50 flex justify-center items-center"
+<div class="w-screen fixed bg-black/80 top-0 left-0 z-50 flex justify-center items-center"
     x-cloak
     x-show="is_modal_open">
     <section id="appointmentForm"
-        class="relative max-w-screen-xl bg-base-200 px-20 min-w-[300px] py-20 flex justify-center">
+        class="relative h-screen max-w-screen-xl bg-base-200 px-12 md:px-20 min-w-[300px] py-20 flex justify-center overflow-y-scroll">
 
         <svg class="swap-on fill-current absolute right-4 top-8 cursor-pointer"
             x-on:click="is_modal_open=false"
@@ -17,78 +17,83 @@
             <h2 class="text-3xl font-bold mb-8">Book Your Appointment
             </h2>
             <form action="">
-                <div class=" ">
+                <div class="w-full">
                     <div class=" w-full mb-4">
-                        <input type="text"
-                            name=""
-                            id=""
-                            class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                            placeholder="First Name">
+                        <label for="name">
+                            <input type="text"
+                                name="name"
+                                id="name"
+                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
+                                placeholder="Full Name">
+                        </label>
                     </div>
 
                     <div class=" w-full mb-4">
-                        <input type="text"
-                            name=""
-                            id=""
-                            class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                            placeholder="Last Name">
+                        <label for="services">
+                            <select name="services"
+                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
+                                id="services">
+                                <option value=""
+                                    seleted>Select Your Services</option>
+                                <option value="">Transportation
+                                    Assistance</option>
+                                <option value="">Accommodation Support
+                                </option>
+                                <option value="">In-Home Care</option>
+                                <option value="">Support Coordination
+                                </option>
+                                <option value="">Daily Tasks
+                                    Assistance
+                                </option>
+                                <option value="">Social Engagement
+                                    Programs</option>
+                            </select>
+                        </label>
                     </div>
                     <div class=" w-full mb-4">
-                        <select name=""
-                            class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                            id="">
-                            <option value=""
-                                seleted>Select Your Services</option>
-                            <option value="">Transportation
-                                Assistance</option>
-                            <option value="">Accommodation Support
-                            </option>
-                            <option value="">In-Home Care</option>
-                            <option value="">Support Coordination
-                            </option>
-                            <option value="">Daily Tasks
-                                Assistance
-                            </option>
-                            <option value="">Social Engagement
-                                Programs</option>
-                        </select>
+                        <label for="phoneNo">
+                            <input type="tel"
+                                name="phoneNo"
+                                id="phoneNo"
+                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
+                                placeholder="Phone No">
+                        </label>
                     </div>
                     <div class=" w-full mb-4">
-                        <input type="text"
-                            name=""
-                            id=""
-                            class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                            placeholder="Phone">
+                        <label for="appointmentDate">
+                            <input type="date"
+                                name="appointmentDate"
+                                id="appointmentDate"
+                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
+                                placeholder="Select Date">
+                        </label>
                     </div>
                     <div class=" w-full mb-4">
-                        <input type="date"
-                            name=""
-                            id=""
-                            class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                            placeholder="Date">
+                        <label for="appointmentTime">
+                            <input type="time"
+                                name="appointmentTime"
+                                id="appointmentTime"
+                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
+                                placeholder="Select Time">
+                        </label>
                     </div>
                     <div class=" w-full mb-4">
-                        <input type="time"
-                            name=""
-                            id=""
-                            class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                            placeholder="Time">
+                        <label for="message">
+                            <textarea type="text"
+                                name="message"
+                                id="message"
+                                class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
+                                placeholder="Type your Message..."></textarea>
+                        </label>
                     </div>
                     <div class=" w-full mb-4">
-                        <textarea type="text"
-                            name=""
-                            id=""
-                            class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                            placeholder="Message">
-                            </textarea>
-                    </div>
-                    <div class=" w-full mb-4">
-                        <button type="submit"
-                            name=""
-                            id=""
-                            class="w-full px-4 py-3 bg-sky-700 text-white rounded-md"
-                            placeholder="Message"> Appointment
-                        </button>
+                        <label for="">
+                            <button type="submit"
+                                name=""
+                                id=""
+                                class="w-full px-4 py-3 bg-sky-700 text-white rounded-md">Appointment
+                            </button>
+                        </label>
                     </div>
             </form>
         </div>

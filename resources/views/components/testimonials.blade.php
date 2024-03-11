@@ -1,4 +1,4 @@
-<section id="Testmonials"
+<section id="testmonials"
     class="w-full py-20 px-8 flex justify-center bg-white">
     <div
         class="flex flex-col items-center max-w-md md:max-w-screen-lg lg:max-w-screen-lg ">

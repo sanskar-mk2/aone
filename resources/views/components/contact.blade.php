@@ -1,4 +1,4 @@
-<section class="w-full py-20 px-8 flex justify-center bg-slate-200">
+<section id="contactDetails" class="w-full py-20 px-8 flex justify-center bg-slate-200">
     <div class="md:max-w-screen-lg lg:max-w-screen-lg md:w-full">
         <h1 class="py-10 text-4xl font-bold text-center">Contact
             Details

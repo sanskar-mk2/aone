@@ -22,11 +22,11 @@
             </div>
         </div>
         <ul id="menuExpand" :class="{ 'hidden lg:flex': !isMenuOpen }" class="basis-full w-full mt-8 lg:mt-0 gap-4 lg:items-center lg:basis-0 flex-col lg:flex-row lg:w-full">
-            <li class="lg:w-full"><a href="" class="lg:w-full hover:text-sky-700 transition-all">Home</a></li>
+            <li class="lg:w-full"><a href="#heroImg" class="lg:w-full hover:text-sky-700 transition-all">Home</a></li>
             <li class="lg:w-full"><a href="#aboutUs" class="lg:w-full whitespace-nowrap hover:text-sky-700 transition-all">About Us</a></li>
             <li class="lg:w-full"><a href="#servicesWeOffer" class="hover:text-sky-700 transition-all">Services</a></li>
-            <li class="lg:w-full"><a href="" class="hover:text-sky-700 whitespace-nowrap transition-all">Contact Us</a></li>
-            <li class="lg:w-full"><a href="#Testmonials" class="hover:text-sky-700 transition-all">Testimonials</a></li>
+            <li class="lg:w-full"><a href="#contactDetails" class="hover:text-sky-700 whitespace-nowrap transition-all">Contact Us</a></li>
+            <li class="lg:w-full"><a href="#testmonials" class="hover:text-sky-700 transition-all">Testimonials</a></li>
             <li x-on:click="is_modal_open = true" class="py-2 lg:mt-0 px-5 mt-2 cursor-pointer bg-sky-700 rounded-md w-full text-white">
                 <span class="transition-all whitespace-nowrap">Book an Appointment</span>
             </li>

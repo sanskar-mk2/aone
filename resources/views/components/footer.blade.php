@@ -6,14 +6,14 @@
                     <img src="{{ Vite::asset('/resources/svgs/logo.svg') }}"
                         class=" w-12 mr-2 group-hover:animate-spin"
                         alt="Logo">
-                    <h1 class="text-xl font-bold">
+                    <h1 class="text-xl font-bold ">
                         Aone Support Services
                     </h1>
                 </div>
                 <span class="mb-4">Far far away, behind the word
                     mountains, far from the
                     countries.</span>
-                <div class="flex justify-center items-center gap-4 my-4">
+                <div class="flex justify-center items-center  gap-4 my-4">
                     <div
                         class="flex items-center justify-center h-12 w-12 rounded-md bg-sky-700">
                         <x-twitter />
@@ -21,6 +21,10 @@
                     <div
                         class="flex items-center justify-center h-12 w-12 rounded-md bg-sky-700">
                         <x-instagram />
+                    </div>
+                    <div
+                        class="flex items-center justify-center h-12 w-12 rounded-md bg-sky-700">
+                        <x-facebook />
                     </div>
                 </div>
             </div>
@@ -30,17 +34,17 @@
                     <li class="list-none"><a href=""></a>Transportation
                         Assistance
                     </li>
-                    <li class="list-none"><a href=""></a>Accommodation
+                    <li class="list-none">Accommodation
                         Support</li>
-                    <li class="list-none"><a href=""></a>In-Home
+                    <li class="list-none">In-Home
                         Care</li>
-                    <li class="list-none"><a href=""></a>Support
+                    <li class="list-none">Support
                         Coordination</li>
-                    <li class="list-none"><a href=""></a>Daily
+                    <li class="list-none">Daily
                         Tasks Assistance</li>
-                    <li class="list-none"><a href=""></a>Social
+                    <li class="list-none">Social
                         Engagement Programs</li>
-                    <li class="list-none"><a href=""></a>Transportation
+                    <li class="list-none">Transportation
                         Assistance
                     </li>
                 </div>
@@ -48,12 +52,19 @@
             <div class="md:w-1/2 px-4">
                 <h3 class="text-xl font-bold mb-2 mt-4">Links</h3>
                 <div>
-                    <li class="list-none">Home</li>
-                    <li class="list-none">Abou Us</li>
-                    <li class="list-none">Services</li>
-                    <li class="list-none">Testmonials</li>
-                    <li class="list-none">Contact Us</li>
-                    <li class="list-none">Book an Appointment</li>
+                    <li class="list-none hover:text-sky-700 transition-all"><a
+                            href="#heroImg">Home</a></li>
+                    <li class="list-none hover:text-sky-700 transition-all"><a
+                            href="#aboutUs">About Us</a></li>
+                    <li class="list-none hover:text-sky-700 transition-all"><a
+                            href="#servicesWeOffer">Services</a></li>
+                    <li class="list-none hover:text-sky-700 transition-all"><a
+                            href="#testmonials">Testmonials</a></li>
+                    <li class="list-none hover:text-sky-700 transition-all"><a
+                            href="#contactDetails">Contact Us</a></li>
+                    <li x-on:click="is_modal_open = true"
+                        class="list-none cursor-pointer hover:text-sky-700 transition-all">
+                        Book an Appointment</li>
                 </div>
             </div>
         </div>
