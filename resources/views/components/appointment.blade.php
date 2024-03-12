@@ -16,7 +16,9 @@
         <div class="w-full">
             <h2 class="text-3xl font-bold mb-8">Book Your Appointment
             </h2>
-            <form action="">
+            <form action="{{ route('form.submit') }}"
+                method="POST">
+                @csrf
                 <div class="w-full">
                     <div class=" w-full mb-4">
                         <label for="name">
