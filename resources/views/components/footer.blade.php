@@ -10,9 +10,8 @@
                         Aone Support Services
                     </h1>
                 </div>
-                <span class="mb-4">Far far away, behind the word
-                    mountains, far from the
-                    countries.</span>
+                <span class="mb-4">Aone support services is your one stop
+                    destination for all your support needs.</span>
                 <div class="flex justify-center items-center  gap-4 my-4">
                     <div
                         class="flex items-center justify-center h-12 w-12 rounded-md bg-sky-700">

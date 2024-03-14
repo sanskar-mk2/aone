@@ -3,8 +3,8 @@
         <div class="flex justify-between w-full">
             <a class="flex items-center group" href="/">
                 <img src="{{ Vite::asset('/resources/svgs/logo.svg') }}" class="w-12 mr-2 group-hover:animate-spin" alt="Logo">
-                <h1 class="text-lg font-bold ml-1 md:hidden">Aone</h1>
-                <h1 class="text-xl font-bold hidden md:block">{{ config('app.name') }}</h1>
+                {{-- <h1 class="text-lg font-bold ml-1 md:hidden">Aone</h1> --}}
+                <h1 class="text-md md:text-xl font-bold md:block">{{ config('app.name') }}</h1>
             </a>
             <div class="lg:hidden">
                 <label class="btn btn-circle swap swap-rotate bg-slate-200">

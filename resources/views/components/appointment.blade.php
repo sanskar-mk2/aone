@@ -1,8 +1,8 @@
-<div class="w-screen fixed bg-black/80 top-0 left-0 z-50 flex justify-center items-center"
+<div class="w-screen h-screen fixed bg-black/80 top-0 left-0 z-50 flex justify-center items-center"
     x-cloak
     x-show="is_modal_open">
     <section id="appointmentForm"
-        class="relative h-screen max-w-screen-xl bg-base-200 px-12 md:px-20 min-w-[300px] py-20 flex justify-center overflow-y-scroll">
+        class="relative h-screen lg:h-3/4 max-w-screen-xl bg-base-200 px-12 md:px-20 min-w-72 py-20 flex justify-center overflow-y-auto">
 
         <svg class="swap-on fill-current absolute right-4 top-8 cursor-pointer"
             x-on:click="is_modal_open=false"
@@ -93,7 +93,7 @@
                             <button type="submit"
                                 name=""
                                 id=""
-                                class="w-full px-4 py-3 bg-sky-700 text-white rounded-md">Appointment
+                                class="w-full px-4 py-3 bg-sky-700 text-white rounded-md">Submit
                             </button>
                         </label>
                     </div>
