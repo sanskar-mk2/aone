@@ -16,15 +16,19 @@
         'overflow-hidden': is_modal_open
     }"
     x-data="{ is_modal_open: false }">
-    
+
     <x-header />
 
     <x-hero />
-    
+
+    @if (isset($formValidationSuccess) && $formValidationSuccess)
+        <div class="text-2xl font-bold text-center">
+            form submitted success
+        </div>
+    @endif
 
     <main class="flex flex-col justify-center items-center">
         <x-about />
-
         <x-services />
 
         <x-appointment />
