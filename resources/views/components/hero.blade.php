@@ -1,8 +1,9 @@
-<section id="heroImg" class="cursor-grab">
+<section id="heroImg"
+    class="cursor-grab">
     <div class="bg-black h-full keen-slider"
         id="hero-slider">
         {{-- Hero slider divs --}}
-        <div style="background-image: url('{{ Vite::asset('/resources/images/hero.jpg') }}'); height: calc(100vh - 80px);"
+        <div style="background-image: url('{{ Vite::asset('resources/images/hero.jpg') }}'); height: calc(100vh - 80px);"
             class="keen-slider__slide relative bg-cover bg-no-repeat bg-top"
             id="hero-slider">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -23,7 +24,7 @@
             </div>
 
         </div>
-        <div style="background-image: url('{{ Vite::asset('/resources/images/hero2.jpg') }}'); height: calc(100vh - 80px);"
+        <div style="background-image: url('{{ Vite::asset('resources/images/hero2.jpg') }}'); height: calc(100vh - 80px);"
             class="keen-slider__slide relative bg-cover bg-no-repeat bg-top">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div
@@ -38,7 +39,7 @@
                     ones.</p>
             </div>
         </div>
-        <div style="background-image: url('{{ Vite::asset('/resources/images/hero3.jpg') }}'); height: calc(100vh - 80px);"
+        <div style="background-image: url('{{ Vite::asset('resources/images/hero3.jpg') }}'); height: calc(100vh - 80px);"
             class="keen-slider__slide relative bg-cover bg-no-repeat bg-top">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div
@@ -53,7 +54,7 @@
                     every moment with your loved ones.</p>
             </div>
         </div>
-        <div style="background-image: url('{{ Vite::asset('/resources/images/hero4.jpg') }}'); height: calc(100vh - 80px);"
+        <div style="background-image: url('{{ Vite::asset('resources/images/hero4.jpg') }}'); height: calc(100vh - 80px);"
             class="keen-slider__slide relative bg-cover bg-no-repeat bg-top">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
             <div

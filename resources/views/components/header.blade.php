@@ -2,7 +2,7 @@
     <nav class="w-full p-4 px-8 flex flex-col lg:flex-row items-center justify-between flex-nowrap bg-slate-200 lg:z-10">
         <div class="flex justify-between w-full">
             <a class="flex items-center group" href="/">
-                <img src="{{ Vite::asset('/resources/svgs/logo.svg') }}" class="w-12 mr-2 group-hover:animate-spin" alt="Logo">
+                <x-logo />
                 {{-- <h1 class="text-lg font-bold ml-1 md:hidden">Aone</h1> --}}
                 <h1 class="text-md md:text-xl font-bold md:block">{{ config('app.name') }}</h1>
             </a>

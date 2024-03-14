@@ -54,7 +54,7 @@
             </div>
         </article>
         <figure class="w-full h-fit md:w-2/5">
-            <img src="{{ Vite::asset('/resources/images/aboutus.jpg') }}"
+            <img src="{{ Vite::asset('resources/images/aboutus.jpg') }}"
                 class="w-full"
                 loading='lazy'
                 alt="">

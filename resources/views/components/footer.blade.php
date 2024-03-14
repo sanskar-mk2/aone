@@ -3,9 +3,7 @@
         <div class="md:flex md:justify-around">
             <div class="md:w-1/2 px-4">
                 <div class="flex items-center gap-2 my-4">
-                    <img src="{{ Vite::asset('/resources/svgs/logo.svg') }}"
-                        class=" w-12 mr-2 group-hover:animate-spin"
-                        alt="Logo">
+                    <x-logo />
                     <h1 class="text-xl font-bold ">
                         Aone Support Services
                     </h1>
