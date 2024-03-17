@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppointmentForm;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +16,9 @@ use App\Http\Controllers\AppointmentForm;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function (Request $request) {
+    $formValidationSuccess = Session::get('formValidationSuccess', false);
+    return view('welcome')->with(compact('formValidationSuccess'));
+})->name('welcome');
 
 Route::post('/appointmentform', AppointmentForm::class)->name("form.submit");

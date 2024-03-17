@@ -13,9 +13,11 @@ class AppointmentForm extends Controller
     public function __invoke(AppointmentFormRequest $request)
     {
         $formValidationSuccess = false;
-        if ($request->validated());
+        if ($request->validated()){
             $formValidationSuccess = true;
-            return view('welcome', compact('formValidationSuccess'));
-
+        } else {
+            dd('fail');
+        }
+        return to_route('welcome')->with(compact('formValidationSuccess'));
     }
 }

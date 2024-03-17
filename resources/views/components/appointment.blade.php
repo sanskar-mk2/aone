@@ -37,28 +37,34 @@
                                 id="services">
                                 <option value=""
                                     seleted>Select Your Services</option>
-                                <option value="">Transportation
+                                <option value="Transportation Assistance">
+                                    Transportation
                                     Assistance</option>
-                                <option value="">Accommodation Support
+                                <option value="Accommodation Support">
+                                    Accommodation Support
                                 </option>
-                                <option value="">In-Home Care</option>
-                                <option value="">Support Coordination
+                                <option value="In-Home Care">In-Home Care
                                 </option>
-                                <option value="">Daily Tasks
+                                <option value="Support Coordination">Support
+                                    Coordination
+                                </option>
+                                <option value="Daily Tasks Assistance">Daily
+                                    Tasks
                                     Assistance
                                 </option>
-                                <option value="">Social Engagement
+                                <option value="Social Engagement Programs">
+                                    Social Engagement
                                     Programs</option>
                             </select>
                         </label>
                     </div>
                     <div class=" w-full mb-4">
-                        <label for="phoneNo">
+                        <label for="phone">
                             <input type="tel"
-                                name="phoneNo"
-                                id="phoneNo"
+                                name="phone"
+                                id="phone"
                                 class="w-full px-4 py-3 border border-gray-400 rounded-md focus:ring-0"
-                                placeholder="Phone No">
+                                placeholder="Phone">
                         </label>
                     </div>
                     <div class=" w-full mb-4">

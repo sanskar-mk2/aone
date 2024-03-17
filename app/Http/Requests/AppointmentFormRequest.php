@@ -28,7 +28,6 @@ class AppointmentFormRequest extends FormRequest
             'appointmentDate' => ['required', 'date', 'date_format:Y-m-d'],
             'appointmentTime' => ['required', 'date_format:H:i'],
             'message' => ['required', 'string', 'max:65535'],
-
         ];
     }
 }
