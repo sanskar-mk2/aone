@@ -25,7 +25,7 @@ class AppointmentFormRequest extends FormRequest
             'name' => ['required', 'string', 'max:255'],
             'services' => ['required', 'in:Transportation Assistance,In-Home Care,Accommodation Support,Support Coordination,Daily Tasks Assistance,Social Engagement Programs'],
             'phone' => ['required', 'string', 'max:15'],
-            'appointmentDate' => ['required', 'date', 'date_format:Y-m-d'],
+            'appointmentDate' => ['required', 'date', 'date_format:Y-m-d', 'after_or_equal:today'],
             'appointmentTime' => ['required', 'date_format:H:i'],
             'message' => ['required', 'string', 'max:65535'],
         ];

@@ -16,7 +16,7 @@
     :class="{
         'overflow-hidden': is_modal_open
     }"
-    x-data="{ is_modal_open: false }">
+    x-data="{ is_modal_open:  @js($errors->any()) }">
 
     <x-header />
 
